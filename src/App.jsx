@@ -16,7 +16,7 @@ import ProductQuickView from './components/products/ProductQuickView';
 function App() {
   return (
     <CartProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
